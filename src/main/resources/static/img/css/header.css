@@ -1,0 +1,32 @@
+
+nav{
+    padding: 0;
+    background: lightgray;
+    height: 15vh;
+    /*border-bottom:1px solid black;*/
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+.nav-item a{
+    font-size: 25px;
+}
+.navbar-header  .navbar-menu {
+    display: flex;
+}
+
+.logo{
+    width: 7vw;
+    padding: 1vh 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #03a9f4;
+}

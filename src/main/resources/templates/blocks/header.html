@@ -1,37 +1,6 @@
+
 <div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
-    <style>
-        nav{
-            padding: 0;
-            background: lightgray;
-            height: 15vh;
-            /*border-bottom:1px solid black;*/
-        }
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            padding: 10px;
-        }
-        .nav-item a{
-            font-size: 25px;
-        }
-        .navbar-header  .navbar-menu {
-            display: flex;
-        }
-
-        .logo{
-            width: 7vw;
-            padding: 1vh 0;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            color: #03a9f4;
-        }
-    </style>
+    <link rel="stylesheet" th:href="@{img/css/header.css}">
     <nav class="navbar navbar-expand-md">
         <div class="container">
             <ul class="navbar-nav mr-auto">
