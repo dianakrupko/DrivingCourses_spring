@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>category</title>
+</head>
+<body>
+<h1>CATEGORY</h1>
+<ul th:each="cat : ${category}" class="square">
+    <li>
+        <p th:text="${cat.name}"></p>
+        <p th:text="${cat.description}"></p>
+        <!--        <p th:text="${category}"></p>-->
+    </li>
+</ul>
+</body>
+</html>
