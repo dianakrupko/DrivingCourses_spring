@@ -13,11 +13,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class CoursesController {
     @Autowired
     private CoursesRepository coursesRepository;
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @GetMapping("/courses")
     public String courses(Model model){
         Iterable<Courses> courses=coursesRepository.findAll();
-        model.addAttribute("category",courses);
+        Iterable<Category> categories=categoryRepository.findAll();
+
+        model.addAttribute("category",categories);
+        model.addAttribute("courses",courses);
         return "courses";
     }
 }
